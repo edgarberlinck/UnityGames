@@ -33,3 +33,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Builds
+/Space Shooter/obj
+/Space Shooter/Builds
