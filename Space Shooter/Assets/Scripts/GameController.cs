@@ -34,7 +34,6 @@ public class GameController : MonoBehaviour {
 	void Update() {
 		if (restart) {
 			if (Input.GetKeyDown (KeyCode.R)) {
-				//Application.LoadLevel
 				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 			}
 		}
