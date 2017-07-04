@@ -619,29 +619,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1179858998 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1033008117245144, guid: f4e973909786040e1a6f65f49d8d07c9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1352332384}
---- !u!114 &1179858999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1179858998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 854774894}
-  damageImage: {fileID: 1247638776}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1 &1247638774
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +726,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114850018282925052, guid: f4e973909786040e1a6f65f49d8d07c9,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 854774894}
+    - target: {fileID: 114850018282925052, guid: f4e973909786040e1a6f65f49d8d07c9,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1247638776}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4e973909786040e1a6f65f49d8d07c9, type: 2}
   m_IsPrefabParent: 0
@@ -1130,6 +1117,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f6618a0da65fa45b24d5105d5d8422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1821707014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821707007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!114 &1821707015
 MonoBehaviour:
   m_ObjectHideFlags: 0
