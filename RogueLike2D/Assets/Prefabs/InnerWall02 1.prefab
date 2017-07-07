@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4904903876252390}
   - component: {fileID: 212110339707974532}
   - component: {fileID: 61871369517836818}
+  - component: {fileID: 114487938363119488}
   m_Layer: 8
   m_Name: InnerWall02 1
   m_TagString: Untagged
@@ -66,6 +67,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114487938363119488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1373052559235498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead03cdd6c1da7b44a50840adf4c9858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chopSound1: {fileID: 0}
+  chopSound2: {fileID: 0}
+  dmgSprite: {fileID: 21300100, guid: fbe1e7b94bb1a4a099d5bcb15a00141c, type: 3}
+  hp: 3
 --- !u!212 &212110339707974532
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,4 +122,3 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
