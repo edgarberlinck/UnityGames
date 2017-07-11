@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -77,4 +78,10 @@ public class EnemyHealth : MonoBehaviour
         ScoreManager.score += scoreValue;
         Destroy (gameObject, 2f);
     }
+
+
+	public void UpdateEnemyHealth (int level) 
+	{
+		startingHealth += Mathf.RoundToInt (startingHealth * level * 0.2f);
+	}
 }
